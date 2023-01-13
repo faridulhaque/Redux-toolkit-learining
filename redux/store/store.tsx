@@ -1,4 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
+import { apiSlice } from '../slices/apiSlice';
 import counterSlice from '../slices/counterSlice';
 import usersSlice from '../slices/usersSlice';
 
@@ -6,7 +7,11 @@ const store = configureStore({
   reducer: {
     counter: counterSlice,
     users: usersSlice,
+    [apiSlice.reducerPath]: apiSlice.reducer
+
   },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(apiSlice.middleware)
+
 })
 export default store;
 

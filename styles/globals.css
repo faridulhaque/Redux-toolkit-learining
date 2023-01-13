@@ -1,9 +1,46 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
-.heading{
+
+.heading {
   text-align: center;
   margin: 20px 0;
 }
 
+.form-wrapper {
+  width: 80%;
+  margin: 50px 10%;
+  background-color: lime;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.form-wrapper button {
+  margin-top: 10px;
+}
+
+
+.table-wrapper {
+  width: 60%;
+  margin: 10px 20%;
+  display: flex;
+  background-color: orange;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-wrapper td {
+  padding: 10px 20px;
+}
+
+.table-wrapper button {
+  padding: 5px 10px;
+  margin: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+}
